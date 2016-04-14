@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffe082"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f57f17"
+                android:padding="15dp"
+                android:text="Light Test"
+                android:textColor="@android:color/white"
+                android:textSize="35dp"/>
+
+
+            <TextView
+                android:id="@+id/tvDisplay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:textColor="#3e2723"
+                android:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/lightmeter"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffe082"
+                android:max="100"
+                android:padding="40dp"
+                android:progress="0" />
+
+
+            <TextView
+                android:id="@+id/reading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/max"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/bStart"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_y="249dp"
+                android:background="#f57f17"
+                android:onClick="onButtonDown"
+                android:text="Start"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/output1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/output2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:text="By                                     Samarth Modi U15CO010                  NIT SURAT"
+                android:paddingLeft="15sp"
+                android:paddingTop="80dp"
+                android:paddingBottom="200dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
